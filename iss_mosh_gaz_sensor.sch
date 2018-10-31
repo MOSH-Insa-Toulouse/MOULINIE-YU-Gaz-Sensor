@@ -43,9 +43,9 @@ Text Label 10550 2600 0    60   ~ 0
 Text Label 10550 2500 0    60   ~ 0
 5(**)
 Text Label 10550 2400 0    60   ~ 0
-6(**)
+6_UART_TX
 Text Label 10550 2300 0    60   ~ 0
-7
+7_UART_RX
 Text Label 10550 2100 0    60   ~ 0
 8
 Text Label 10550 2000 0    60   ~ 0
@@ -327,14 +327,10 @@ F 3 "" H 1950 2050 50  0000 C CNN
 $EndComp
 NoConn ~ 8900 2700
 NoConn ~ 8900 2800
-NoConn ~ 10550 3000
-NoConn ~ 10550 2900
 NoConn ~ 10550 2800
 NoConn ~ 10550 2700
 NoConn ~ 10550 2600
 NoConn ~ 10550 2500
-NoConn ~ 10550 2400
-NoConn ~ 10550 2300
 NoConn ~ 10550 2100
 NoConn ~ 10550 2000
 NoConn ~ 10550 1900
@@ -446,4 +442,105 @@ Wire Wire Line
 	7250 950  7250 900 
 Wire Wire Line
 	6900 950  6900 900 
+$Comp
+L Connector_Generic:Conn_01x08 J2
+U 1 1 5BD9F3B1
+P 3550 2050
+F 0 "J2" H 3470 1425 50  0000 C CNN
+F 1 "Conn_01x08" H 3470 1516 50  0000 C CNN
+F 2 "" H 3550 2050 50  0001 C CNN
+F 3 "~" H 3550 2050 50  0001 C CNN
+	1    3550 2050
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 5BDA0B65
+P 4000 2450
+F 0 "#PWR06" H 4000 2200 50  0001 C CNN
+F 1 "GND" H 4000 2300 50  0000 C CNN
+F 2 "" H 4000 2450 50  0000 C CNN
+F 3 "" H 4000 2450 50  0000 C CNN
+	1    4000 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2350 4000 2350
+Wire Wire Line
+	4000 2350 4000 2450
+$Comp
+L power:+3.3V #PWR05
+U 1 1 5BDA1FA5
+P 4000 2150
+F 0 "#PWR05" H 4000 2000 50  0001 C CNN
+F 1 "+3.3V" V 3950 2200 50  0000 C CNN
+F 2 "" H 4000 2150 50  0000 C CNN
+F 3 "" H 4000 2150 50  0000 C CNN
+	1    4000 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 2150 4000 2150
+Wire Wire Line
+	3750 1650 4000 1650
+Text Label 4800 1750 0    60   ~ 0
+6_UART_TX
+Text Label 4000 1650 0    60   ~ 0
+7_UART_RX
+Wire Wire Line
+	4800 1750 4700 1750
+$Comp
+L Device:R R2
+U 1 1 5BDA8A22
+P 4550 1750
+F 0 "R2" V 4343 1750 50  0000 C CNN
+F 1 "1k" V 4434 1750 50  0000 C CNN
+F 2 "" V 4480 1750 50  0001 C CNN
+F 3 "~" H 4550 1750 50  0001 C CNN
+	1    4550 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5BDA8AA1
+P 4300 1950
+F 0 "R1" H 4230 1904 50  0000 R CNN
+F 1 "2k" H 4230 1995 50  0000 R CNN
+F 2 "" V 4230 1950 50  0001 C CNN
+F 3 "~" H 4300 1950 50  0001 C CNN
+	1    4300 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR07
+U 1 1 5BDA8B1A
+P 4300 2150
+F 0 "#PWR07" H 4300 1900 50  0001 C CNN
+F 1 "GND" H 4300 2000 50  0000 C CNN
+F 2 "" H 4300 2150 50  0000 C CNN
+F 3 "" H 4300 2150 50  0000 C CNN
+	1    4300 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2150 4300 2100
+Wire Wire Line
+	3750 1750 4300 1750
+Wire Wire Line
+	4300 1800 4300 1750
+Wire Wire Line
+	4300 1750 4400 1750
+NoConn ~ 10550 2900
+NoConn ~ 10550 3000
+Wire Notes Line
+	3350 700  5300 700 
+Wire Notes Line
+	5300 700  5300 3600
+Wire Notes Line
+	3350 3600 3350 700 
+Wire Notes Line
+	3350 3600 5300 3600
+Connection ~ 4300 1750
+Text Notes 3750 900  0    94   ~ 0
+LoraWan RN2483
 $EndSCHEMATC
