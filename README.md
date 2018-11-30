@@ -12,7 +12,18 @@ We used Kicad for building this shield. Because it is an Open Source Electronics
 
 # Content
 
+a KiCad project manage file
+
+KiCad Schematic files
+
 KiCad PCB Files: A shield for the gas sensor and the LoRa Module to plug in an Arduino Uno
+
+KiCad Libraries
+
+Pictures of the composants
+
+Readme file
+
 
 ## Overview
 
@@ -30,3 +41,5 @@ Then, we created a library symbole for LTC 1050
 Afterwards, we created the following circuit : 
 
 ### PCB
+
+In order to 
