@@ -21,3 +21,8 @@ This shield is composed of:
  - an amplifier (LTC1050)
  - a Groove connector for future calibration of the Gas Sensor
 
+First, we created the project with an anduino UNO
+Then, we created a library symbole for LTC 1050
+Afterwards, we created the following circuit : 
+
+### PCB
