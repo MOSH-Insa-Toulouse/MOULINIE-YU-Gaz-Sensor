@@ -45,3 +45,5 @@ Afterwards, we created the following circuit :
 In order to add the gas sensor to the board, we first created an new footprint. 
 
 After we had all the components prepared, we started to do the routage.
+![alt text](PCB.png)
+![alt text](PCB_3D.png)
