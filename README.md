@@ -20,7 +20,7 @@ KiCad PCB Files: A shield for the gas sensor and the LoRa Module to plug in an A
 
 KiCad Libraries
 
-Pictures of the composants
+Pictures of the components
 
 Readme file
 
@@ -34,12 +34,14 @@ This shield is composed of:
  - an amplifier (LTC1050)
  - a Groove connector for future calibration of the Gas Sensor
 
-First, we created the project with an anduino UNO
+First, we created the project with an arduino UNO
 
-Then, we created a library symbole for LTC 1050
+Then, we created a library symbol for LTC 1050
 
 Afterwards, we created the following circuit : 
 
 ### PCB
 
-In order to 
+In order to add the gas sensor to the board, we first created an new footprint. 
+
+After we had all the components prepared, we started to do the routage.
