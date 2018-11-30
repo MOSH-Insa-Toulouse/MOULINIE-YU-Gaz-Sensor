@@ -8,6 +8,8 @@ This main goal of this project is to build a connected nanoparticle gas sensor t
 
 For this, we used an Arduino UNO and RN2483 LoRa chip to send data on the The Things Network.
 
+We used Kicad for building this shield. Because it is an Open Source Electronics Design Automation Suite. We are able to use  the Schematic Capture and the PCB Layout along with the 3D Viewer in it. They can help us have a more specific view of our shield.
+
 # Content
 
 KiCad PCB Files: A shield for the gas sensor and the LoRa Module to plug in an Arduino Uno
@@ -22,7 +24,9 @@ This shield is composed of:
  - a Groove connector for future calibration of the Gas Sensor
 
 First, we created the project with an anduino UNO
+
 Then, we created a library symbole for LTC 1050
+
 Afterwards, we created the following circuit : 
 
 ### PCB
