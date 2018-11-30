@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name iss_mosh_gaz_sensor-cache)(type Legacy)(uri D:/Github/MOULINIE-YU-Gaz-Sensor/iss_mosh_gaz_sensor-cache.lib)(options "")(descr ""))
+  (lib (name iss_mosh_gaz_sensor-rescue)(type Legacy)(uri ${KIPRJMOD}/iss_mosh_gaz_sensor-rescue.lib)(options "")(descr ""))
 )
