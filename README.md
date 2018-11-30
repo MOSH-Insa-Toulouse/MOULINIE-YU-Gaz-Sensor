@@ -1,11 +1,23 @@
-# MOULINIE-YU-Gaz-Sensor
-Project 5th ISS - MOSH - TP Gaz Sensor
+# Connected gas sensor / LoRa TTN
+Project 5th ISS - MOSH - TP Gas Sensor
+Authors: MOULINIÉ Dorian & YU Juan from INSA Toulouse - 5 ISS
 
-In this project, we want to make a module which can ...
+# Description
 
-Firstly, we create arduino uno.
+This main goal of this project is to build a connected nanoparticle gas sensor to monitor the concentration of gas.
 
-Then, we create lora module.
+For this, we used an Arduino UNO and RN2483 LoRa chip to send data on the The Things Network.
 
-Afterwards, we create the gaz sensor module.
-	LTC1050
+# Content
+
+KiCad PCB Files: A shield for the gas sensor and the LoRa Module to plug in an Arduino Uno
+
+## Overview
+
+This shield is composed of:
+
+ - a LoRa Module (RN2483) as transceiver
+ - a Gas sensor
+ - an amplifier (LTC1050)
+ - a Groove connector for future calibration of the Gas Sensor
+
