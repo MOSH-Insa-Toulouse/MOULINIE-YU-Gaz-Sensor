@@ -355,8 +355,6 @@ Wire Wire Line
 	1500 1700 1500 1600
 Wire Wire Line
 	1500 1600 1200 1600
-Text Label 1950 3000 0    60   ~ 0
-A0
 Text Notes 1600 950  0    94   ~ 0
 Gaz Sensor
 $Comp
@@ -535,13 +533,13 @@ LoraWan RN2483
 $Comp
 L Device:R R5
 U 1 1 5BF80849
-P 1950 2600
-F 0 "R5" H 2020 2646 50  0000 L CNN
-F 1 "10k" H 2020 2555 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1880 2600 50  0001 C CNN
-F 3 "~" H 1950 2600 50  0001 C CNN
-	1    1950 2600
-	1    0    0    -1  
+P 1800 2450
+F 0 "R5" H 1870 2496 50  0000 L CNN
+F 1 "10k" H 1870 2405 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1730 2450 50  0001 C CNN
+F 3 "~" H 1800 2450 50  0001 C CNN
+	1    1800 2450
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R Rcal1
@@ -679,8 +677,6 @@ Wire Wire Line
 Connection ~ 2600 2450
 Wire Wire Line
 	2600 2450 2250 2450
-Wire Wire Line
-	1950 2750 1950 3000
 $Comp
 L power:GND #PWR0111
 U 1 1 5BFBB6B6
@@ -799,4 +795,28 @@ Wire Notes Line
 Wire Notes Line
 	700  650  700  3200
 NoConn ~ 3250 2600
+$Comp
+L Device:R Rsensor1
+U 1 1 5C02A745
+P 1500 2450
+F 0 "Rsensor1" H 1570 2496 50  0000 L CNN
+F 1 "10k<...<1G" H 1570 2405 50  0000 L CNN
+F 2 "Socket_Arduino_Uno:TO-5-4(gas_sensor)" V 1430 2450 50  0001 C CNN
+F 3 "~" H 1500 2450 50  0001 C CNN
+	1    1500 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0113
+U 1 1 5C02CB80
+P 1300 2450
+F 0 "#PWR0113" H 1300 2300 50  0001 C CNN
+F 1 "+3.3V" V 1250 2500 50  0000 C CNN
+F 2 "" H 1300 2450 50  0000 C CNN
+F 3 "" H 1300 2450 50  0000 C CNN
+	1    1300 2450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1350 2450 1300 2450
 $EndSCHEMATC
