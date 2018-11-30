@@ -38,7 +38,8 @@ First, we created the project with an arduino UNO
 
 Then, we created a library symbol for LTC 1050
 
-Afterwards, we created the following circuit : 
+Afterwards, we created the following circuit :
+![alt text](schema.png)
 
 ### PCB
 
